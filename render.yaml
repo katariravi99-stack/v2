@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: varaha-silks-backend
+    env: node
+    buildCommand: npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      # Add your environment variables here
+      # - key: RAZORPAY_KEY_ID
+      #   sync: false
+      # - key: RAZORPAY_KEY_SECRET
+      #   sync: false
+      # - key: CLIENT_URL
+      #   value: https://your-frontend-domain.com
